@@ -6,10 +6,11 @@ $ (function(){
 	
 	var slider = $('#slider');
 	var slideshow = $('.slide-show');
-	var slideCount = $('.slider-caption');
+	var slideCount = $('.single-slide').length;
 	var slideWidth = 100/slideCount;
 	var slideIndex = 0;
 	
+	console.log(slideCount);
 	
-	$('.slide-show').css(slideCount*100 + '%');
+	$('.slide-show').css('width', slideCount*100 + '%');
 });
